@@ -4,21 +4,78 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
   </head>
   <body>
     
-    <div class="container mt-5">
-        <div class="card" style="width: 18rem;">
-            <img src="https://mobimg.b-cdn.net/v3/fetch/5d/5d3cec9ced5006617501d485dd65486e.jpeg?w=1470&r=0.5625" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card Mohi</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam ipsam molestiae error iure, impedit excepturi atque temporibus rerum! Voluptas dolores debitis inventore velit eum laborum voluptatum nam consequuntur. Laboriosam, aspernatur!</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
+   <header>
+    <nav class="navbar bg-body-tertiary fixed-top">
+      <div class="container-fluid">
+        <button class="navbar-toggler me-auto" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="m-auto d-flex">
+          <input type="text" class="header-input" placeholder="Search...">
+          <button><img width="20" src="./172546_search_icon.svg" alt=""></button>
+        </div>
+        <div class="d-flex align-items-center">
+          <img width="80" src="https://avatars.mds.yandex.net/i?id=3a808a26f149985f1c1b43a84acd4f65a9b50460-9213435-images-thumbs&n=13" alt="">
+          <a class="navbar-brand" href="#">Premium</a>
+        </div>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Premium</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
-    </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item d-flex align-items-center">
+                <img width="40" src="https://www.shutterstock.com/image-vector/house-home-icon-design-collection-260nw-1310539238.jpg" alt="">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item d-flex align-items-center ">
+              <img width="40" src="https://cdn.icon-icons.com/icons2/2248/PNG/512/fire_icon_138608.png" alt="">
+                <a class="nav-link" href="#">trends</a>
+              </li>
+              <li class="nav-item d-flex align-items-center">
+               <img width="40" src="https://image.pngaaa.com/675/4792675-middle.png" alt="">
+                <a class="nav-link " href="#" >
+                  Subscriptions
+                </a>
+                <li class="nav-item d-flex align-items-center">
+                  <img width="40" src="https://www.svgrepo.com/show/80677/youtube.svg" alt="">
+                <a class="nav-link" href="#">originals</a>
+              </li>
+              <li class="nav-item d-flex align-items-center">
+                <img width="40" src="https://cdn.iconscout.com/icon/free/png-512/free-library-add-1781639-1518324.png?f=avif&w=256" alt="">
+                <a class="nav-link" href="#">libary</a>
+              </li>
+              <li class="nav-item d-flex align-items-center">
+                <img width="40" src="https://cdn.iconscout.com/icon/free/png-512/free-history-clock-reload-refresh-recycle-schedule-30517.png?f=avif&w=256" alt="">
+                <a class="nav-link" href="#">history</a>
+              </li>
+              <li class="nav-item d-flex align-items-center">
+                <img width="40" src="https://cdn.iconscout.com/icon/free/png-512/free-video-1898777-1608686.png?f=avif&w=256" alt="">
+                <a class="nav-link" href="#">your videos</a>
+              </li>
+              <li class="nav-item d-flex align-items-center">
+                <img width="40" src="https://cdn.iconscout.com/icon/premium/png-512-thumb/camera-reel-2693896-2235764.png?f=avif&w=256" alt="">
+                <a class="nav-link" href="#">your movies</a>
+              </li>
+              <li class="nav-item d-flex align-items-center">
+                <img width="40" src="https://cdn.iconscout.com/icon/free/png-512/free-watch-later-1779702-1512737.png?f=avif&w=256" alt="">
+                <a class="nav-link" href="#">watch later</a>
+              </li>
+              <li class="nav-item d-flex align-items-center">
+                <img width="40" src="https://cdn.iconscout.com/icon/free/png-512/free-chevron-down-2652905-2202822.png?f=avif&w=256" alt="">
+                <a class="nav-link" href="#">show more</a>
+              </li>
+          </div>
+        </div>
+      </div>
+    </nav>
+   </header>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
   </body>
