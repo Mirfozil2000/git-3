@@ -4,20 +4,214 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
   </head>
   <body>
     
-    <div class="container mt-5">
-        <div class="card" style="width: 18rem;">
-            <img src="sho.jpg" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Shorahmat Shomansurov</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis possimus vel atque quisquam quis repudiandae sit blanditiis aliquam exercitationem iure obcaecati accusamus a officiis illum, totam, provident harum labore ipsa.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
+   <header>
+    <nav class="navbar bg-body-tertiary fixed-top">
+      <div class="container-fluid">
+        <button class="navbar-toggler me-auto" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="m-auto d-flex">
+          <input type="text" class="header-input" placeholder="Search...">
+          <button><img width="30" src="data:image/png;base64,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" alt=""></button>
+        </div>
+        <div class="d-flex align-items-center">
+          <img width="80" src="https://avatars.mds.yandex.net/i?id=3a808a26f149985f1c1b43a84acd4f65a9b50460-9213435-images-thumbs&n=13" alt="">
+          <a class="navbar-brand" href="#">Premium</a>
+        </div>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
-    </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Trends</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Subscriptions
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Originals</a>
+              </li>
+            </ul>
+            <form class="d-flex mt-3" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+   </header>
+    <section class="section1">
+      <div class="section1-text">
+        <p>All</p>
+        <p>Yatches</p>
+        <p>Boates</p>
+        <p>RVs</p>
+        <p>Electirical engireening</p>
+        <p>Photocopier</p>
+        <p>Cookery</p>
+        <p>Apple</p>
+        <p>CSS</p>
+        <p>Figma</p>
+        <p>Astronomy</p>
+        <p>React routers</p>
+        <p>Motrocycles</p>
+      </div>
+    </section>
+    <section class="section2">
+      <div class="kanal1">
+        <div class="img1">
+          <img src="s-l1600.jpg" alt="">
+        </div>
+        <div class="kanal1-text">
+          <div class="kanal1-img">
+             <img src="mercedes-logo-removebg-preview.png" alt="">
+          </div> 
+          <div class="kanal1-texts">
+             <h1>Lorem ipsum dolor sit amet consectetur.</h1>
+          <p>Lorem ipsum dolor sit.</p>
+          <p>27k views - 1days ago</p>
+          </div>
+        </div>
+      </div>       
+      <div class="kanal2">
+        <div class="img2">
+          <img src="mini_magick20200707-22-zyneoa.png" alt="">
+        </div>
+        <div class="kanal2-text">
+          <div class="kanal2-img">
+            <img src="png-transparent-logo-css-css3-thumbnail-removebg-preview.png" alt="">
+          </div>
+          <div class="kanal2-texts">
+            <h1>Lorem ipsum dolor sit amet consectetur.</h1>
+            <p>Lorem ipsum dolor</p>
+            <p>16k views - 2year ago</p>
+          </div>
+        </div>
+      </div>
+      <div class="kanal3">
+        <div class="img3">
+          <img src="safran-recette.jpg" alt="">
+        </div>
+        <div class="kanal3-text">
+          <div class="kanal3-img">
+            <img src="gul.png" alt="">
+          </div>
+          <div class="kanal3-texts">
+            <h1>Lorem ipsum dolor sit amet consectetur.</h1>
+            <p>Lorem, ipsum dolor.</p>
+            <p>26k views - 1week ago</p>
+          </div>
+        </div>
+      </div>
+      <div class="kanal4">
+        <div class="img4">
+          <img src="https://www.berrybase.de/media/image/60/3a/71/ID_118442_orig_600x600.jpg" alt="">
+        </div>
+        <div class="kanal4-text">
+          <div class="kanal4-img">
+            <img src="png-transparent-logo-css-css3-thumbnail-removebg-preview.png" alt="">
+          </div>
+          <div class="kanal4-texts">
+            <h1>Lorem ipsum dolor sit amet consectetur.</h1>
+            <p>Lorem, ipsum dolor.</p>
+            <p>2.3k views - 2days ago</p>
+          </div>
+        </div>
+      </div>
+      <div class="kanal1">
+        <div class="img1">
+          <img src="s-l1600.jpg" alt="">
+        </div>
+        <div class="kanal1-text">
+          <div class="kanal1-img">
+             <img src="mercedes-logo-removebg-preview.png" alt="">
+          </div> 
+          <div class="kanal1-texts">
+             <h1>Lorem ipsum dolor sit amet consectetur.</h1>
+          <p>Lorem ipsum dolor sit.</p>
+          <p>27k views - 1days ago</p>
+          </div>
+        </div>
+      </div>       
+      <div class="kanal2">
+        <div class="img2">
+          <img src="mini_magick20200707-22-zyneoa.png" alt="">
+        </div>
+        <div class="kanal2-text">
+          <div class="kanal2-img">
+            <img src="png-transparent-logo-css-css3-thumbnail-removebg-preview.png" alt="">
+          </div>
+          <div class="kanal2-texts">
+            <h1>Lorem ipsum dolor sit amet consectetur.</h1>
+            <p>Lorem ipsum dolor</p>
+            <p>16k views - 2year ago</p>
+          </div>
+        </div>
+      </div>
+      <div class="kanal3">
+        <div class="img3">
+          <img src="safran-recette.jpg" alt="">
+        </div>
+        <div class="kanal3-text">
+          <div class="kanal3-img">
+            <img src="gul.png" alt="">
+          </div>
+          <div class="kanal3-texts">
+            <h1>Lorem ipsum dolor sit amet consectetur.</h1>
+            <p>Lorem, ipsum dolor.</p>
+            <p>26k views - 1week ago</p>
+          </div>
+        </div>
+      </div>
+      <div class="kanal4">
+        <div class="img4">
+          <img src="https://www.berrybase.de/media/image/60/3a/71/ID_118442_orig_600x600.jpg" alt="">
+        </div>
+        <div class="kanal4-text">
+          <div class="kanal4-img">
+            <img src="png-transparent-logo-css-css3-thumbnail-removebg-preview.png" alt="">
+          </div>
+          <div class="kanal4-texts">
+            <h1>Lorem ipsum dolor sit amet consectetur.</h1>
+            <p>Lorem, ipsum dolor.</p>
+            <p>2.3k views - 2days ago</p>
+          </div>
+        </div>
+      </div>
+    </section>
+ 
+
+
+
+
+
+
+
+
+
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
   </body>
