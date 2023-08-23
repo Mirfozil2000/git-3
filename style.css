@@ -1,0 +1,114 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.header-input{
+    width: 400px;
+}
+.section1{
+    padding-bottom: 50px;
+    background-color:  rgb(30, 30, 29);
+}
+.section1-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+    gap: 40px;
+    font-size: 20px;
+}
+.section1-text p{
+    background-color: rgb(157, 151, 151);
+    padding: 5px 10px;
+    border-radius: 17px;
+}
+.section2{
+    padding: 50px;
+    background-color: rgb(30, 30, 29);
+    display: flex;
+    gap: 60px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.img1 img{
+    width: 350px;
+    padding-left: 20px;
+    padding-bottom: 15px;
+}
+.kanal1-img img{
+    width: 90px;
+    padding-left: 20px;
+    padding-right: 10px;
+}
+.kanal1-text h1{
+    font-size: 15px;
+    width: 200px;
+    color: white;
+}
+.kanal1-text{
+    display: flex;
+    color: white;
+}
+.kanal1-texts, h1, p {
+    /* flex-direction: column; */
+    margin-bottom: 0 !important;
+    
+    /* padding: 0; */
+}
+.img2 img{
+    width: 320px;
+    padding-bottom: 20px;
+}
+.kanal2-img img{
+    width: 60px;
+    padding-right: 15px;
+}
+.kanal2-text{
+    display: flex;
+    color: white;
+}
+.kanal2-text h1{
+    font-size: 15px;
+    width: 200px;
+}
+.img3 img{
+    width: 300px;
+    height: 180px;
+    
+}
+.kanal3-img img{
+    width: 80px;
+    padding-top: 20px;
+    margin-right: 5px;
+}
+.kanal3-text{
+    display: flex;
+    color: white;
+}
+.kanal3-texts{
+    padding-top: 20px;
+}
+.kanal3-text h1{
+    font-size: 15px;
+    width: 200px;
+}
+.img4 img{
+    width: 300px;
+    height: 190px;
+}
+.kanal4-img img{
+    width: 70px;
+    padding-right: 15px;
+    padding-top: 20px;
+}
+.kanal4-text{
+    display: flex;
+    color: white;
+}
+.kanal4-texts{
+    padding-top: 20px;
+}
+.kanal4-text h1{
+    font-size: 15px;
+    width: 200px;
+}
